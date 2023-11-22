@@ -9,7 +9,7 @@ import (
 const (
 	DefaultSecurityGroup = "default"
 	DefaultProjectName   = "docker-machine"
-	DefaultFlavorName    = "vps-ssd-1"
+	DefaultFlavorName    = "b2-7"
 	DefaultRegionName    = "GRA1"
 	DefaultImageName     = "Ubuntu 16.04"
 	DefaultSSHUserName   = "ubuntu"

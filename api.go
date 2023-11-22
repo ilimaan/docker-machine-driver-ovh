@@ -2,8 +2,9 @@ package main
 
 import (
 	"fmt"
-	"github.com/ovh/go-ovh/ovh"
 	"strings"
+
+	"github.com/ovh/go-ovh/ovh"
 )
 
 const (
@@ -112,7 +113,7 @@ type NetworkParams []NetworkParam
 // InstanceReq defines the fields for a VM creation
 type InstanceReq struct {
 	Name           string        `json:"name"`
-	FlavorID       string        `json:"flavorID"`
+	FlavorID       string        `json:"flavorName"`
 	ImageID        string        `json:"imageID"`
 	Region         string        `json:"region"`
 	NetworkParams  NetworkParams `json:"networks"`

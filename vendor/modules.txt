@@ -1,0 +1,46 @@
+# github.com/Azure/go-ansiterm v0.0.0-20160622173216-fa152c58bc15
+## explicit
+github.com/Azure/go-ansiterm
+github.com/Azure/go-ansiterm/winterm
+# github.com/Sirupsen/logrus v0.10.1-0.20160829202321-3ec0642a7fb6
+## explicit
+github.com/Sirupsen/logrus
+# github.com/docker/docker v1.4.2-0.20160502201243-75e63c942ec8
+## explicit
+github.com/docker/docker/pkg/system
+github.com/docker/docker/pkg/term
+github.com/docker/docker/pkg/term/windows
+# github.com/docker/go-units v0.5.0
+## explicit
+github.com/docker/go-units
+# github.com/docker/machine v0.7.0-rc2.0.20160405014120-5b4159d0d8a1
+## explicit
+github.com/docker/machine/libmachine/drivers
+github.com/docker/machine/libmachine/drivers/plugin
+github.com/docker/machine/libmachine/drivers/plugin/localbinary
+github.com/docker/machine/libmachine/drivers/rpc
+github.com/docker/machine/libmachine/log
+github.com/docker/machine/libmachine/mcnflag
+github.com/docker/machine/libmachine/mcnutils
+github.com/docker/machine/libmachine/ssh
+github.com/docker/machine/libmachine/state
+github.com/docker/machine/libmachine/version
+github.com/docker/machine/version
+# github.com/ovh/go-ovh v0.0.0-20160411152349-09fe958c5a94
+## explicit
+github.com/ovh/go-ovh/ovh
+# github.com/smartystreets/goconvey v1.8.1
+## explicit; go 1.18
+# github.com/stretchr/testify v1.8.4
+## explicit; go 1.20
+# golang.org/x/crypto v0.0.0-20160406043751-b8a0f4bb4040
+## explicit
+golang.org/x/crypto/curve25519
+golang.org/x/crypto/ssh
+golang.org/x/crypto/ssh/terminal
+# golang.org/x/sys v0.6.0
+## explicit; go 1.17
+golang.org/x/sys/unix
+# gopkg.in/ini.v1 v1.11.0
+## explicit
+gopkg.in/ini.v1
