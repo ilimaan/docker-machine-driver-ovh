@@ -11,7 +11,7 @@ const (
 	DefaultProjectName   = "docker-machine"
 	DefaultFlavorName    = "b2-7"
 	DefaultRegionName    = "GRA1"
-	DefaultImageName     = "Ubuntu 16.04"
+	DefaultImageName     = "Ubuntu 20.04"
 	DefaultSSHUserName   = "ubuntu"
 	DefaultBillingPeriod = "hourly"
 )

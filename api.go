@@ -113,7 +113,7 @@ type NetworkParams []NetworkParam
 // InstanceReq defines the fields for a VM creation
 type InstanceReq struct {
 	Name           string        `json:"name"`
-	FlavorID       string        `json:"flavorName"`
+	FlavorID       string        `json:"flavorId"`
 	ImageID        string        `json:"imageID"`
 	Region         string        `json:"region"`
 	NetworkParams  NetworkParams `json:"networks"`
@@ -350,11 +350,11 @@ func (a *API) DeleteSshkey(projectID, instanceID string) (err error) {
 }
 
 // CreateInstance start a new public cloud instance and returns resulting object
-func (a *API) CreateInstance(projectID, name, pubkeyID, flavorID, ImageID, region string, networkIDs []string, monthlyBilling bool) (instance *Instance, err error) {
+func (a *API) CreateInstance(projectID, name, pubkeyID, flavorId, ImageID, region string, networkIDs []string, monthlyBilling bool) (instance *Instance, err error) {
 	var instanceReq InstanceReq
 	instanceReq.Name = name
 	instanceReq.SshkeyID = pubkeyID
-	instanceReq.FlavorID = flavorID
+	instanceReq.FlavorID = flavorId
 	instanceReq.ImageID = ImageID
 	instanceReq.Region = region
 	instanceReq.MonthlyBilling = monthlyBilling

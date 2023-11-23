@@ -92,12 +92,12 @@ func (d *Driver) GetCreateFlags() []mcnflag.Flag {
 		},
 		mcnflag.StringFlag{
 			Name:  "ovh-flavor",
-			Usage: "OVH Cloud flavor name or id. Default: vps-ssd-1",
+			Usage: "OVH Cloud flavor name or id. Default: b2-7",
 			Value: DefaultFlavorName,
 		},
 		mcnflag.StringFlag{
 			Name:  "ovh-image",
-			Usage: "OVH Cloud Image name or id. Default: Ubuntu 16.04",
+			Usage: "OVH Cloud Image name or id. Default: Ubuntu 20.04",
 			Value: DefaultImageName,
 		},
 		mcnflag.StringFlag{
@@ -289,7 +289,8 @@ func (d *Driver) PreCreateCheck() error {
 
 	return nil
 }
-//copied from openstack driver
+
+// copied from openstack driver
 func sanitizeKeyPairName(s *string) {
 	*s = strings.Replace(*s, ".", "_", -1)
 }
